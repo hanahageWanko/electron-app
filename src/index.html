@@ -1,12 +1,32 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Hello World!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
-
 <body>
-  <h1>初めてのElectron</h1>
-  We are using node <script>document.write(process.versions.node)</script>,
-  Chrome <script>document.write(process.versions.chrome)</script>,
-  and Electron <script>document.write(process.versions.electron)</script>.
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="input-field col l11">
+          <input id="inputtext1" type="text" class="validate">
+          <label for="last_name">シェルコマンド</label>
+        </div>
+        <div class="input-field col l1">
+          <button type="button" class="waves-effect waves-light btn" onclick="run()">実行</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">実行結果</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
